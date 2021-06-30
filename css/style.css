@@ -14,16 +14,21 @@ Table of Content
     1. GENERAL
         1.1 Reset CSS
         1.2 Google Fonts
+        1.3 Default CSS
+
     2. HELPER
         2.1 Social Icons Design
         2.2 Button Toggler
         2.3 OWL Slider
+
     3. HEADER
         3.1 General Header Style
         3.2 Horizontal Header Style
+
     4. HOME SECTION
         4.1 Parallax Element Colors
         4.2 Scroll Down Button
+
     5. ABOUT SECTION
     6. SERVICE SECTION
     7. PORTFOLIO SECTION
@@ -44,7 +49,7 @@ Table of Content
     1. GENERAL
 ==================*/
 
-
+/* 1.1 Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -52,8 +57,18 @@ Table of Content
     outline: none;
 }
 
+/* 1.2 Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* 1.3 Default CSS */
+html {
+    font-size: 1rem;
 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 
 
