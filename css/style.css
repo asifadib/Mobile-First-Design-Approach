@@ -1,12 +1,11 @@
 /*---------------------------------------------------------------------------------------
-* Template Name      :  RectCV - Personal Bootstrap 4 HTML Template                      |
+* Template Name      :  Mobile First Design Approach HTML Template                      |
 * Author             :  Asif Adib                                                        |
 * Support & Contact  :  contact@asifadib.me                                              |
 * Version            :  1.1.0                                                            |
 * Created            :  01 July 2021                                                     |
-* File Description   :  Dark theme css file of the template                              |
+* File Description   :  Light theme css file of the template                              |
 *----------------------------------------------------------------------------------------*/
-
 
 /******************
 Table of Content
@@ -17,34 +16,14 @@ Table of Content
         1.3 Default CSS
         1.4 Variable Colors
         1.5 Pre-build CSS Class
+        1.6 Section Common Padding
 
-    2. HELPER
-        2.1 Social Icons Design
-        2.2 Button Toggler
-        2.3 OWL Slider
-
-    3. HEADER
-        3.1 General Header Style
-        3.2 Horizontal Header Style
-
-    4. HOME SECTION
-        4.1 Parallax Element Colors
-        4.2 Scroll Down Button
-
-    5. ABOUT SECTION
-    6. SERVICE SECTION
-    7. PORTFOLIO SECTION
-    8. RESUME SECTION
-    9. TESTIMONIAL SECTION
-    10. BLOG SECTION
-    11. CONTACT SECTION
-    12. FOOTER SECTION
-    13. FACTS SECTION
-    14. PROJECT SECTION
-    15. VIDEO SECTION
+    2. Navigation Design
+    3. Hero Section Design
+    4. Apartments Section Design
+    5. Footer Section
 
 ******************/
-
 
 
 /*=================
@@ -65,7 +44,6 @@ Table of Content
 /* 1.3 Default CSS */
 html {
     font-size: 1rem;
-
 }
 
 body {
@@ -79,8 +57,10 @@ body {
     --border: #D9DDE7;
     --link: #596172;
     --white: #ffffff;
+    --section-bg: #f6f6f7;
+    --text-primary: #2B313D;
+    --text-secondary: #949FB7;
 }
-
 
 /* 1.5 Pre-build CSS Class */
 .flex {
@@ -105,40 +85,33 @@ body {
     flex-basis: 1;
 }
 
+/* 1.6 Section Common Padding */
+section {
+    padding: 2rem 0;
+}
 
 
+/*=================================
+    2. Navigation Design
+=================================*/
 
-
-
-
-
-
-
-
-
-/* Navigation Design */
 .container {
     max-width: 90%;
     margin: 0 auto;
 }
-
 nav {
     padding: 1rem 0;
 }
-
 .search-block {
     margin-left: 1.4rem;
     padding: 0.5rem 0.8rem;
     border: 0.063rem solid var(--border);
     border-radius: 0.25rem;
-
 }
 .search-block input {
     border: none;
-    min-width: 11.875rem;
-    
+    min-width: 11.875rem; 
 }
-
 nav ul {
     width: 100%;
     text-align: center;
@@ -167,7 +140,10 @@ nav ul li a:hover {
 }
 
 
-/* Hero Section Design */
+/*=================================
+    3. Hero Section Design
+=================================*/
+
 .hero {
     min-height: calc(100vh - 4.0625rem);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/mobile-img.png);
@@ -175,18 +151,15 @@ nav ul li a:hover {
     background-size: cover;
     background-position: bottom;
 }
-
 .hero-text-block {
     width: 90%;
     margin: 0 auto;
     color: var(--white);
 }
-
 .hero .house-emoji {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
-
 .hero-text-block h1 {
     font-size: 2rem;
     line-height: 1.3;
@@ -204,14 +177,9 @@ nav ul li a:hover {
     border: none;
     color: var(--white);
 }
-
 .hero-search-block ::placeholder {
     color: var(--white);
 }
-
-
-.hero-btn-block 
-
 .btn {
     color: var(--white);
     padding: 0.7rem 1rem;
@@ -221,7 +189,6 @@ nav ul li a:hover {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
 }
-
 .btn-primary {
     background-color: var(--primary);
 }
@@ -232,41 +199,98 @@ nav ul li a:hover {
 .btn-secondary  {
     background-color: var(--secondary);
 }
-
 .btn-secondary:hover {
     background-color: transparent;
     border: 1px solid var(--secondary);
 }
+.hero-img-block {
+    display: none;
+}
 
 
+/*=================================
+    4. Apartments Section Design
+=================================*/
+
+.apartments {
+    background-color: var(--section-bg);
+}
+
+.section-heading {
+    margin-bottom: 1rem;
+}
+.section-heading h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+.section-heading h2 span {
+    color: var(--text-secondary);
+}
+
+.section-heading a {
+    text-decoration: none;
+    color: var(--link);
+    font-size: 1rem; 
+}
+
+.section-heading a:hover {
+    color: var(--primary);
+}
+
+.apartment-list-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.apartments-card img {
+    width: 100%;
+}
+
+.apartment-meta span {
+    color: var(--link);
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
+}
+
+.apartment-title {
+    margin-top: 1rem;
+}
+.apartment-title a {
+    text-decoration: none;
+    color: var(--text-primary);
+    line-height: 1.6;
+    
+}
+.apartment-title a:hover {
+    color: var(--primary);
+}
 
 
-/*=================
-    2. GENERAL
-==================*/
+/*====================
+    5. Footer Section
+======================*/
 
-
-
-
-/*=================
-    3. GENERAL
-==================*/
-
-
-
-/*=================
-    4. GENERAL
-==================*/
-
-
-
-/*=================
-    5. GENERAL
-==================*/
-
-
-
-
-/*=================
-    6. GENERAL
-==================*/
+footer {
+    background: var(--text-primary);
+    padding: 1rem 0.5rem;
+}
+.copyright h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.copyright h2 a {
+    font-weight: bold;
+    color: var(--primary);
+    text-decoration: none;
+    font-style: italic;
+}
+.copyright h2 a:hover {
+    color: yellow;
+    font-style: normal;
+}
+/* End Style */
